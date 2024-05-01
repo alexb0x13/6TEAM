@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function(){
 })
 
 async function getAllCourses(){
-    const response = await fetch("http://localhost:3000/api/courses")
+    const response = await fetch("/api/courses")
     if (response.ok) {
         const courses = await response.json()
         let html = ""
@@ -19,7 +19,7 @@ async function deleteCourse() {
     // get the course id
     const courseID = document.querySelector("#courseDropDown option:checked").value;
 
-    const response = await fetch("http://localhost:3000/api/courses/" + courseID, {
+    const response = await fetch("/api/courses/" + courseID, {
         method: "DELETE"
     });
 

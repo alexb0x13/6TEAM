@@ -26,7 +26,7 @@ async function updateCourse(){
         courseDesc: document.querySelector("#courseDesc").value,
         startDate: document.querySelector("#startDate").value 
     }
-    const response = await fetch("http://localhost:3000/api/courses/" + courseID, {
+    const response = await fetch(/api/courses/" + courseID, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

@@ -13,7 +13,7 @@ async function addCourse(){
         startDate: document.querySelector("#startDate").value 
     }
 
-    const response = await fetch("http://localhost:3000/api/courses", {
+    const response = await fetch("/api/courses", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
