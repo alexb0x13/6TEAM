@@ -4,10 +4,19 @@ const Course = require("./models/course")
 var cors = require("cors")
 
 const app = express();
+
+const PORT = process.env.PORT || 3030;
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
+
 app.use(cors())
 
 //Middleware that parses HTTP requests with JSON body
 app.use(express.json());
+
+app.use(express.static("public"));
 
 const router = express.Router()
 
@@ -78,4 +87,4 @@ router.delete("/courses/:id", async (req, res)=> {
 
 //all requests that usually use an api start with /api...  so the url would be localhost:3000
 app.use("/api", router)
-app.listen(3000);
+//app.listen(3000);
