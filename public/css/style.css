@@ -1,0 +1,65 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+}
+
+.banner {
+    background-color: #2E8B57; /* Forest Green color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding for better readability */
+    text-align: center; /* Center align the text */
+    font-size: 24px; /* Increase font size for emphasis */
+    font-weight: bold; /* Make text bold for emphasis */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/* Style navigation links */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style header */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style list of courses */
+ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    width: 80%;
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Style links within courses list */
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #666;
+}
