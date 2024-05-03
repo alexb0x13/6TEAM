@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", async function(){
         document.querySelector("#courseTitle").value = course.courseTitle
         document.querySelector("#courseDept").value = course.courseDept
         document.querySelector("#courseDesc").value = course.courseDesc
-        document.querySelector("#startDate").value = course.startDate.substring(0,10)
+        document.querySelector("#startDate").value = course.startDate.substring(0, 10);
     }
     
 })
