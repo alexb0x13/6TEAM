@@ -6,11 +6,15 @@
     <title>Courses Front End</title>
     <script src="scripts/edit.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./scripts/auth.js"></script>
+    <script defer src="./scripts/init.js"></script>
 </head>
 <body>
     <nav>
-        <a href="/index.html">All Courses</a>
-        <a href="/add_course.html">Add Courses</a>
+        <a href="./index.html">All Courses</a>
+        <a href="./add_course.html">Add Courses</a>
+        <button id="logout" style="float: right;">Logout</button>
+
     </nav>
     <form action="/api/courses" method="post">
         <div>

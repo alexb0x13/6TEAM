@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Front End</title>
+    <script src="./scripts/login.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <a href="/public/index.html">All Courses</a>
+        <a href="/public/add_course.html">Add Courses</a>
+        <a href="/public/delete.html">Delete</a>
+        <button id="logout" style="float: right;">Logout</button>
+    </nav>
+
+    <form id="login" autocomplete="off">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" id="password">
+        </div>
+        <button id="loginBtn" type="button">Login</button>
+        <p id="errorMsg"></p>
+    </form>
+    <p>Not registered? <a href="registration.html">Click here to register</a></p>
+
+    <button id="statusBtn">Display Status</button>
+</body>
+</html>

@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function(){
     const urlparam = new URLSearchParams(window.location.search)
     const courseID = urlparam.get('id')
 
-    const response = await fetch ("/api/courses/" + courseID)
+    const response = await fetch ("http://localhost:3030/api/courses/" + courseID)
     if(response.ok){
         let course = await response.json()
         document.querySelector("#courseId").value = course._id
@@ -26,7 +26,7 @@ async function updateCourse(){
         courseDesc: document.querySelector("#courseDesc").value,
         startDate: document.querySelector("#startDate").value 
     }
-    const response = await fetch("/api/courses/" + courseID, {
+    const response = await fetch("http://localhost:3030/api/courses/" + courseID, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

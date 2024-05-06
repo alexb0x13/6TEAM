@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function(){
     const courseID = urlparam.get("id")
     console.log(courseID)
 
-    const response = await fetch("/api/courses/" + courseID)
+    const response = await fetch("http://localhost:3030/api/courses/" + courseID)
     const course = await response.json()
     console.log(course)
 
