@@ -11,9 +11,10 @@ async function addCourse(){
         courseDept: document.querySelector("#courseDept").value,
         courseDesc: document.querySelector("#courseDesc").value,
         startDate: document.querySelector("#startDate").value, 
+        username: localStorage.getItem("uname")
     }
 
-    const response = await fetch("/api/courses", {
+    const response = await fetch("http://localhost:3030/api/courses", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
